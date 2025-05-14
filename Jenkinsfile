@@ -9,7 +9,7 @@ pipeline {
     }
 
     tools {
-        dotnet 'dotnet-3.1'
+        dotnetsdk 'dotnet-3.1'
     }
 
     stages {
