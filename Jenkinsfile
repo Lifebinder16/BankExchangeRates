@@ -3,7 +3,6 @@ pipeline {
     agent any
 
     environment {
-        DOTNET_VERSION = '3.1'
         IMAGE_NAME = 'bankexchangerates'
         IMAGE_TAG = 'latest'
     }
@@ -31,13 +30,14 @@ pipeline {
             }
         }
 				
+        // Создаю образ Docker
         stage('Docker Build') {
             steps {
                 bat "docker build -t ${env.IMAGE_NAME}:${env.IMAGE_TAG} ."
             }
         }
 
-        stage('Run container (optional)') {
+        stage('Run container') {
             steps {
                 bat "docker run --rm -d -p 8081:80 ${env.IMAGE_NAME}:${env.IMAGE_TAG}"
             }
