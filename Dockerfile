@@ -1,4 +1,4 @@
-# Загружаю Windows образ с оф сайта
+# Загружаю образ с оф сайта
 FROM mcr.microsoft.com/dotnet/aspnet:3.1-nanoserver-ltsc2022 AS base
 WORKDIR /app
 
