@@ -25,3 +25,7 @@ https://localhost:44389/swagger/index.html
 ## CI/CD проекта
 
 В рамках тестового задания так же был настроен пайплайн в Jenkins, который автоматически собирает проект и контейнеризует его в Docker.
+
+![photo_2025-05-14_17-54-02](https://github.com/user-attachments/assets/a8cfbf9b-b744-485b-b45c-a087cc8f05d0)
+
+![photo_2025-05-14_17-54-04](https://github.com/user-attachments/assets/e9f86f4f-ea00-4aa8-80df-0cba1f12d090)
