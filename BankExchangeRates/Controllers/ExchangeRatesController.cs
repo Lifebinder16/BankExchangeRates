@@ -23,6 +23,11 @@ namespace BankExchangeRates.Controllers
 			_service = service;
 		}
 		 
+		/// <summary>
+		/// Возвращает коллекцию валют и информацию о них с сайта Банка России
+		/// </summary>
+		/// <param name="request">Параметры запроса</param>
+		/// <returns>Возвращает коллекцию валют</returns>
 		[HttpGet]
 		public async Task<ActionResult<List<ExchangeRateResponse>>> GetCurrencyRate([FromQuery] ExchangeRateRequest request)
 		{
