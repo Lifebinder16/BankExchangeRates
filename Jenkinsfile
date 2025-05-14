@@ -4,7 +4,7 @@ pipeline {
 
     environment {
         DOTNET_VERSION = '3.1'
-        IMAGE_NAME = 'BankExchangeRates'
+        IMAGE_NAME = 'bankexchangerates'
         IMAGE_TAG = 'latest'
     }
 
