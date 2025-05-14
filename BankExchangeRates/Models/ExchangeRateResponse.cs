@@ -16,11 +16,11 @@ namespace BankExchangeRates.Models
 		/// </summary>
 		public DateTime Date { get; set; }
 		/// <summary>
-		/// Числовой код валюты
+		/// ISO Цифровой код валюты
 		/// </summary>
 		public int NumCode { get; set; }
 		/// <summary>
-		/// Буквенный код валюты
+		/// ISO Символьный код валюты
 		/// </summary>
 		public string CharCode { get; set; }
 		/// <summary>
@@ -28,15 +28,15 @@ namespace BankExchangeRates.Models
 		/// </summary>
 		public int Nominal { get; set; }
 		/// <summary>
-		/// Наименование валюты
+		/// Название валюты
 		/// </summary>
 		public string Name { get; set; }
 		/// <summary>
-		/// Значение Value
+		/// Курс
 		/// </summary>
 		public decimal Value { get; set; }
 		/// <summary>
-		/// Значение VunitRate
+		/// Курс за 1 единицу валюты
 		/// </summary>
 		public decimal VunitRate { get; set; }
 	}
