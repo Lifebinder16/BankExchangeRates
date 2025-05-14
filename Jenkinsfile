@@ -31,6 +31,18 @@ pipeline {
             }
         }
 				
+        stage('Docker Build') {
+            steps {
+                bat "docker build -t ${env.IMAGE_NAME}:${env.IMAGE_TAG} ."
+            }
+        }
+
+        stage('Run container (optional)') {
+            steps {
+                bat "docker run --rm -d -p 8080:80 ${env.IMAGE_NAME}:${env.IMAGE_TAG}"
+            }
+        }
+				
     }
 
     post {
@@ -38,5 +50,6 @@ pipeline {
             echo 'Pipeline completed.'
         }
     }
+		
 }
 
