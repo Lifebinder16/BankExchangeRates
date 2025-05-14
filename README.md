@@ -21,3 +21,7 @@ https://localhost:44389/swagger/index.html
 ```
 .\BankExchangeRates\bin\Debug\netcoreapp3.1\BankExchangeRates.xml
 ```
+
+## CI/CD проекта
+
+В рамках тестового задания так же был настроен пайплайн в Jenkins, который автоматически собирает проект и контейнеризует его в Docker.
