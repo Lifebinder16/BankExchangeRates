@@ -39,7 +39,7 @@ pipeline {
 
         stage('Run container (optional)') {
             steps {
-                bat "docker run --rm -d -p 8080:80 ${env.IMAGE_NAME}:${env.IMAGE_TAG}"
+                bat "docker run --rm -d -p 8081:80 ${env.IMAGE_NAME}:${env.IMAGE_TAG}"
             }
         }
 				
